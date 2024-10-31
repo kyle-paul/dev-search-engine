@@ -1,0 +1,30 @@
+@import '../../scss/colors.scss';
+
+.field {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+
+  .control {
+    .input {
+      border: 1px solid rgba(255, 255, 255, 0.2); 
+      border-radius: 8px;
+      background-color: $app-dark-grey;
+      color: white;
+      border: 1px solid $app-light-grey;
+      padding: 10px;
+      width: 320px;
+      margin-right: 15px;
+      border-radius: 4px;
+      height: 35px;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 4px $app-gradient-start;
+      }
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}

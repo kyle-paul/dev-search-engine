@@ -1,0 +1,15 @@
+@import '../../scss/colors.scss';
+
+.button {
+  margin-bottom: 20px;
+
+  .button {
+    background: linear-gradient(45deg, $app-gradient-start, $app-gradient-end);
+    border: none;
+    color: white;
+    &:hover {
+      background: linear-gradient(45deg, $app-gradient-end, $app-gradient-start);
+      box-shadow: 0 4px 10px $app-hover-purple; // Purple glow on hover
+    }
+  }
+}

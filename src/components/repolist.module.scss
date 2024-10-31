@@ -1,0 +1,22 @@
+@import '../scss/colors.scss';
+
+.repolist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // background: linear-gradient(135deg, $app-gradient-start, $app-gradient-end); // Gradient background
+  padding: 20px; // Add padding for aesthetics
+  border-radius: 8px; // Rounded corners
+}
+
+.loader {
+  width: 250px;
+  display: block; // Center the loader
+  margin: auto; // Center align
+}
+
+.message {
+  padding-top: 25px;
+  color: white; // White text for better visibility
+  text-align: center; // Center message
+}

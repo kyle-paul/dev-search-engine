@@ -1,0 +1,47 @@
+@import '../scss/colors.scss';
+
+.aiCard {
+  background-color: $app-dark-grey;
+  padding: 5px;
+  border-radius: 8px;
+  color: $app-light-white;
+  width: 1000px;
+  margin: 20px auto;
+  text-align: left;
+  position: relative;
+  border: 1px solid transparent;
+  background-image: linear-gradient($app-dark-grey, $app-dark-grey),
+                    linear-gradient(45deg, $app-gradient-start, $app-gradient-end);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: flickerGlow 1.5s infinite alternate;
+
+  .title {
+    color: $app-link;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+
+  .responseText {
+    color: $app-light-white;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 10px;
+  }
+}
+
+@keyframes flickerGlow {
+  0% {
+    filter: brightness(1.0);
+    box-shadow: 0 0 4px 1px $app-hover-purple;
+  }
+  50% {
+    filter: brightness(1.1);
+    box-shadow: 0 0 6px 1px $app-gradient-end;
+  }
+  100% {
+    filter: brightness(1.2);
+    box-shadow: 0 0 8px 2px $app-gradient-start;
+  }
+}

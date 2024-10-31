@@ -1,0 +1,29 @@
+@import '../scss/colors.scss';
+
+.navbar {
+  background: linear-gradient(45deg, $app-gradient-start, $app-gradient-end);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+
+  .navbaritem {
+    color: $app-white;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+
+  .navbarburger span {
+    background-color: white;
+  }
+}
+
+.navbarmenu {
+  background: inherit;
+  color: $app-background;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}

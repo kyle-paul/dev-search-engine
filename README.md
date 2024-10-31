@@ -1,6 +1,8 @@
 # Developer Search Engine
 
-This project was developed for the Round 3 interview of Google Developer Student Clubs (GDSC-HCMUS). The selected tech stack is React & Next.js, as specified in the project requirements. Released on October 28, with a submission deadline of November 1, this project aims to deliver a local AI-powered search engine.
+This project was developed for the Round 3 interview of Google Developer Student Clubs (GDSC-HCMUS). The selected tech stack is React & Next.js, as specified in the project requirements. Released on October 28, with a submission deadline of November 1, this project aims to deliver a local AI-powered search engine. This enables developers to quickly search GitHub repositories and access relevant information with the assistance of a Large Language Model (LLM). This LLM-based assistant helps provide in-depth insights into the topics developers are exploring, enhancing productivity by offering intelligent recommendations and explanations.
+
+**Watch demo video [HERE](https://www.youtube.com/watch?v=4nMiiRSbGGk)**
 
 ## Getting Started
 
@@ -20,7 +22,7 @@ export NODE_OPTIONS=--openssl-legacy-provider
 ```
 
 ### Deploying the AI Server
-For local AI hosting, we use the `Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int8` model, a robust yet efficient model for our needs. You can deploy it with [Triton Inference Server](https://github.com/triton-inference-server/backend) or via the [Qwen framework](https://qwen.readthedocs.io/en/latest/getting_started/quickstart.html) for seamless integration.
+For local AI hosting, we use the `Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int8` model, a robust yet efficient model for our needs. You can deploy it with [Triton Inference Server](https://github.com/triton-inference-server/backend) or via the [Qwen framework](https://qwen.readthedocs.io/en/latest/deployment/vllm.html) for seamless integration.
 
 ### Launching the Website
 To start the website, run the following command:
@@ -29,4 +31,4 @@ To start the website, run the following command:
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+Then open `http://localhost:3000` in your browser to view the application.

@@ -1,0 +1,35 @@
+@import '../../scss/colors.scss';
+
+.header {
+  margin-bottom: 20px;
+
+  span {
+    font-weight: 700;
+    font-size: 30px;
+    background: $app-light-grey; // Light grey background for header text
+    padding: 0.5rem; // Adding some padding for better spacing
+    border-radius: 4px; // Slight rounding for a softer look
+  }
+}
+
+.description {
+  padding: 20px; // Uniform padding for better readability
+  color: $app-grey; // Set text color to app-grey for contrast
+  font-size: 18px; // Adjust font size for better readability
+  background: $app-dark-grey; // Dark grey background for the description
+  border-radius: 4px; // Rounded corners for the description box
+}
+
+.language {
+  font-weight: 500;
+  color: $app-gradient-start; // Gradient start color for the language
+  font-size: 24px;
+  padding-bottom: 15px;
+  background: rgba(255, 255, 255, 0.1); // Light background for language
+  border-radius: 4px; // Rounded corners for the language box
+  padding: 0.5rem; // Padding for better spacing
+}
+
+.buttonLink { // Scope button styles under the buttonLink class
+  margin-top: 10px; // Add spacing above buttons
+}

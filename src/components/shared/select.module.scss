@@ -1,0 +1,42 @@
+@import '../../scss/colors.scss';
+
+.field {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  .label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .control {
+    .select {
+      width: 100%;
+      background-color: rgba(50, 50, 50, 0.8); // Slightly transparent dark background
+      border: 1px solid rgba(255, 255, 255, 0.2); // Soft white border
+      border-radius: 8px;
+
+      &:hover {
+        background-color: $app-hover-purple;
+      }
+
+      select {
+        color: white;
+        background-color: transparent;
+        border: none;
+        padding: 0.5rem;
+        width: 100%;
+
+        &:hover {
+          background-color: $app-hover-purple;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 4px $app-gradient-start; // Purple glow on focus
+        }
+      }
+    }
+  }
+}

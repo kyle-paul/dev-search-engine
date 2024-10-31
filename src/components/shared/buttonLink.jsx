@@ -1,0 +1,38 @@
+import React from 'react'
+import styles from './buttonLink.module.scss'
+import Link from 'next/link'
+
+const buttonLink = ({ href, text, type = 'primary', target, external }) => {
+  const types = {
+    primary: 'is-primary',
+    success: 'is-success',
+    danger: 'is-danger',
+    dark: 'is-dark',
+    light: 'is-light',
+  }
+
+  const buttonClass = `button ${types[type]}`
+
+  if (external) {
+    return (
+      <div className={styles.button}>
+        <a className={buttonClass} target={target} href={href}>
+          {text}
+        </a>
+      </div>
+    )
+  }
+
+  // client-side navigation without a full page refresh
+  return (
+    <div className={styles.button}>
+      <Link href={href}>
+        <a className={buttonClass} target={target}>
+          {text}
+        </a>
+      </Link> 
+    </div>
+  )
+}
+
+export default buttonLink
