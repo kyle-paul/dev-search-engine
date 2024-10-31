@@ -2,7 +2,7 @@
 
 This project was developed for the Round 3 interview of Google Developer Student Clubs (GDSC-HCMUS). The selected tech stack is React & Next.js, as specified in the project requirements. Released on October 28, with a submission deadline of November 1, this project aims to deliver a local AI-powered search engine. This enables developers to quickly search GitHub repositories and access relevant information with the assistance of a Large Language Model (LLM). This LLM-based assistant helps provide in-depth insights into the topics developers are exploring, enhancing productivity by offering intelligent recommendations and explanations.
 
-**Watch demo video [HERE](https://www.youtube.com/watch?v=4nMiiRSbGGk)**
+**Watch demo video [HERE](https://youtu.be/4nMiiRSbGGk)**
 
 ## Getting Started
 
