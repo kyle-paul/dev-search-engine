@@ -14,26 +14,21 @@ async function getAI(topic, language) {
         model: "Qwen/Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int8",
         messages: [
           { role: "system", content: "You are a helpful assistant. User search a github repository. You will provide them more information of their topic" },
-          { role: "user", content: `Tell me more about ${topic} used in ${language}` },
+          { role: "user", content: `Tell me about ${topic} used in ${language}. Please be concise`},
         ],
         temperature: 0.7,
         max_tokens: 512,
       },
       AIConfig
     );
-    return response.data;
+
+    const output = response.data.choices[0].message.content;
+    return output;
     
   } catch (error) {
     console.error("Error fetching completion:", error);
   }
 }
 
-function parseTextContent(text) {
-  let readableText = text.replace(/\\n/g, '\n');
-  readableText = readableText.replace(/\\n\n/g, '\n'); 
-  readableText = readableText.replace(/\\n\n/g, '\n');
-  return readableText;
-}
 
-
-export { getAI , parseTextContent}
+export { getAI }

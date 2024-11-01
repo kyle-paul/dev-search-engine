@@ -40,7 +40,7 @@ const Index = (props) => {
   const fetchAIResponse = async (topic, language) => {
     try {
       const response = await getAI(topic, language);
-      setAIResponse(response.choices[0].message.content);
+      setAIResponse(response);
     } catch (error) {
       console.error("Error fetching AI response:", error);
     }
